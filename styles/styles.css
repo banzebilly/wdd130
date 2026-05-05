@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    /* aligns image and text vertically */
+    gap: 20px;
+    /* space between image and paragraph */
+    max-width: 800px;
+}
