@@ -1,23 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+main {
+    max-width: 840px;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+main img {
+    width: 150px;
+    height: auto;
+
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    /* aligns image and text vertically */
-    gap: 20px;
-    /* space between image and paragraph */
-    max-width: 800px;
+aside img {
+    width: 200px;
+    height: auto;
+
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
