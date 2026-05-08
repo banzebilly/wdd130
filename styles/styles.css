@@ -1,10 +1,28 @@
+nav {
+    background: steelblue;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
 main {
     max-width: 840px;
 }
 
+h1 {
+    color: steelblue;
+}
+
 main img {
-    width: 200px;
+    width: 150px;
     height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+
 }
 
 aside {
@@ -18,7 +36,7 @@ aside {
 }
 
 aside img {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
