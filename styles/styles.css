@@ -1,28 +1,28 @@
 nav {
-    background: steelblue;
+    background-color: steelblue;
+    padding: 10px;
 }
 
 nav a {
     color: white;
-    padding: 10px;
     display: block;
-}
-
-main {
-    max-width: 840px;
+    padding: 20px;
 }
 
 h1 {
     color: steelblue;
 }
 
+main {
+    max-width: 840px;
+}
+
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-
 }
 
 aside {
