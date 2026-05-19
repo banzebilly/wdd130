@@ -38,6 +38,13 @@ article {
     position: relative;
 }
 
+.hero article {
+    height: auto;
+    position: absolute;
+    top: 90px;
+    background: rgb(230, 198, 137);
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -51,8 +58,8 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    color: white;
+    background: rgb(100, 100, 110);
     /* white text – make sure there is enough contrast with the background-color */
 }
 
