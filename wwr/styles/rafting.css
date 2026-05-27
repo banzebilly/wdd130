@@ -38,8 +38,8 @@ header {
 
     padding: 1rem;
 
-    background-color: white;
-    border-bottom: 1px solid #ccc;
+    background-color: var(--accent2-color);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .logo img {
@@ -106,7 +106,7 @@ h2 {
     bottom: 30px;
     left: 20px;
     right: 20px;
-    background-color: rgba(242, 206, 177, 0.9);
+    background-color: var(--secondary-color);
     padding: 1rem;
 }
 
@@ -192,7 +192,7 @@ footer {
 
     margin-top: 2rem;
 
-    border-top: 1px solid #ccc;
+    border-top: 1px var(--secondary-color);
 }
 
 .socialmedia {
