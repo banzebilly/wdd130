@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/images/salt-lake-temple.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    padding: 2rem;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.30);
+
+    backdrop-filter: blur(9px);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+
+    border: 1px solid #bb9b9b;
+    border-radius: 6px;
+
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    background: #0066cc;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #004c99;
+}
