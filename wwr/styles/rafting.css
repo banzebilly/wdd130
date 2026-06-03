@@ -192,7 +192,131 @@ footer {
 
     margin-top: 2rem;
 
-    border-top: 1px var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+}
+
+/* contact-styling start here */
+
+.employee {
+    padding: 2rem 0;
+}
+
+.employee h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.employee-gallery {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+}
+
+.employee figure {
+    flex: 1;
+
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* contact hero section start here */
+main {
+    margin: 1rem auto;
+    padding: 2rem 0;
+}
+
+.contact-hero h1 {
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.contact-hero p {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.34rem;
+}
+
+/* contact section start here  */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+    margin: 2rem auto;
+}
+
+.map-box {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: 0;
+}
+
+.contact-form form {
+    max-height: 500px;
+    width: 100%;
+
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #999;
+    border-radius: 3px;
+
+}
+
+form label {
+    font-weight: bold;
+}
+
+.purpose-group {
+    display: grid;
+
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.subscribe-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
 }
 
 .socialmedia {
@@ -207,4 +331,36 @@ footer {
 .socialmedia img {
     width: 30px;
     height: auto;
+
+}
+
+/* media qurry for responsive */
+
+@media (max-width: 768px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 }

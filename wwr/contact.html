@@ -11,9 +11,10 @@
 
     <meta name="author" content="Banze Billy">
 
-    <meta name="description" content="You may contact whitewater rafting Company.">
+    <meta name="description"
+      content="Contact Exciting Expeditions White Water Rafting for bookings, trip information, customer support, and adventure inquiries.">
 
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -59,8 +60,8 @@
             </div>
 
             <div class="contact-form">
-                <form action="" method="post">
-                    <label for="name">name</label>
+                <form method="post">
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" required placeholder="Name">
 
                     <label for="email">Email</label>
@@ -69,28 +70,28 @@
                     <fieldset class="purpose-group">
                         <legend>Message Purpose</legend>
 
-                        <label>
-                            <input type="radio" name="purpose" value="general" checked>
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general">
                             General Inquiry
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="reservation" checked>
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
                             Reservation Question
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion" checked>
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
                             Website Suggestion
                         </label>
                     </fieldset>
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="4"
                       placeholder="Type here"></textarea>
-                    </textarea>
 
-                    <label class="subscribe-label">
-                        <input type="checkbox" name="subscribe">
+
+                    <label class="subscribe-label" for="subscribe">
+                        <input type="checkbox" name="subscribe" id="subscribe">
                         Please Subscribe me to the monthly newsletter
                     </label>
 
@@ -130,8 +131,7 @@
 
     <footer>
 
-        <p>© 2026 🌍 Exciting Expeditions 🌍 Banze Billy</p>
-
+        <p>© 2026 Exciting Expeditions | Banze Billy</p>
         <nav class="socialmedia">
 
             <a href="https://facebook.com">
