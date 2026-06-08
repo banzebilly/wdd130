@@ -14,7 +14,29 @@
 
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
+
+    /* NEW: background system
+    --bg-image: url("../images/rafling-1.png");
+    --bg-overlay: rgba(255, 255, 255, 0.92); */
 }
+
+/* body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: var(--bg-overlay);
+    z-index: -1;
+} */
 
 body {
     font-family: var(--body-font);
@@ -363,4 +385,109 @@ form label {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.cta {
+    background: var(--accent1-color);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1f6f8b;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    border-radius: 12px;
+}
+
+.cta .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: var(--secondary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cta h1 {
+    font-weight: bold;
+    z-index: 1;
+    padding: 1rem 0;
+}
+
+.cta p {
+    font-size: 1rem;
+}
+
+.trips {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.trip-grid {
+    background: var(--accent2-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+li {
+
+    list-style: none;
+}
+
+.trip-card {
+    background: var(--accent2-color);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.trip-card h3 {
+    margin: 10px 0;
+
+}
+
+.trip-table-section {
+    padding: 1rem 0;
+}
+
+.trip-table-section h2 {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    background: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 12px;
+}
+
+.trip-table th {
+    background: var(--accent1-color);
+    color: white;
+    padding: 12px;
+}
+
+.trip-table td {
+    padding: 10px;
+    border: 1px solid var(--accent1-color);
 }
