@@ -388,19 +388,22 @@ form label {
 }
 
 .cta {
-    background: var(--accent1-color);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/images/raf.png");
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #1f6f8b;
     color: white;
     text-align: center;
     padding: 70px 20px;
     border-radius: 12px;
+    height: 70vh;
+
 }
 
-.cta .btn {
+.btn {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 20px;
@@ -414,7 +417,9 @@ form label {
 .cta h1 {
     font-weight: bold;
     z-index: 1;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    color: var(--accent2-color);
+
 }
 
 .cta p {
