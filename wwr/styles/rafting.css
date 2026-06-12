@@ -45,6 +45,7 @@ body {
 }
 
 header,
+.home-artical,
 main,
 footer {
     width: 940px;
@@ -100,6 +101,8 @@ h2 {
     color: var(--primary-color);
 }
 
+/* home-page-style */
+
 /* HERO SECTION */
 
 .hero {
@@ -114,7 +117,7 @@ h2 {
 
 .hero h1 {
     position: absolute;
-    top: 20px;
+    top: 100px;
     width: 100%;
     text-align: center;
     padding: 1rem;
@@ -136,6 +139,92 @@ h2 {
     float: right;
     width: 125px;
     margin-left: 1rem;
+}
+
+/* home page content */
+.home-artical {
+    padding: 2rem;
+    margin-top: 8%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.home-content p {
+    text-align: center;
+    padding-top: 6%;
+}
+
+.home-content button {
+
+    background: var(--primary-color);
+    width: 60%;
+    padding: 1rem;
+
+    font-size: larger;
+    border: none;
+    border-radius: 4px;
+    margin-top: 3%;
+}
+
+.home-content button a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.title {
+    text-align: center;
+    padding-top: 6%;
+
+    font-weight: bold;
+}
+
+.book-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.book-images figure {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.book-images figure img {
+    width: 100%;
+    height: auto;
+
+}
+
+.book-images figure button {
+    width: 60%;
+    background: var(--primary-color);
+    align-content: center;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+.book-images figure button a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+
 }
 
 /* HISTORY SECTION */
